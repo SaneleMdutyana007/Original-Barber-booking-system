@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /dashboard
+Disallow: /api/
+Disallow: /thank-you/
+
+Sitemap: https://yourbarbershop.co.za/sitemap.xml

@@ -1,0 +1,24 @@
+project_id = "barbershop-za"
+
+[auth]
+enable_signup = true
+minimum_password_length = 8
+
+[auth.hook.custom_access_token]
+enabled = true
+uri = "pg-functions://postgres/public/custom_access_token_hook"
+
+[storage]
+file_size_limit = "5MiB"
+
+[[storage.buckets]]
+name = "service-images"
+public = true
+
+[[storage.buckets]]
+name = "barber-photos"
+public = true
+
+[[storage.buckets]]
+name = "case-study-images"
+public = true

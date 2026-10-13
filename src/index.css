@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --charcoal: #111111;
+  --amber: #D97706;
+  --offwhite: #FAFAF9;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--offwhite);
+  color: var(--charcoal);
+}
+h1, h2, h3, .font-display { font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.02em; }
+
+/* Sticky mobile CTA adds padding so content isn't hidden */
+@media (max-width: 767px) {
+  body { padding-bottom: 76px; }
+}
+
+*:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
